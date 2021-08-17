@@ -14,8 +14,8 @@ import com.shop.elementgames.exceptions.ProductNotFoundException;
 import com.shop.elementgames.models.Product;
 import com.shop.elementgames.repository.ProductRepository;
 
-@RestController()
-@RequestMapping(path = "/products",produces = "application/json" , consumes = "application/json")
+@RestController
+@RequestMapping(path = "/api/products",produces = "application/json" , consumes = "application/json")
 public class ProductsController {
 	
 	@Autowired private ProductRepository productRepository;
