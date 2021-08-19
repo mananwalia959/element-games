@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build-java": "ng build --output-path ./../src/main/resources/static",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
