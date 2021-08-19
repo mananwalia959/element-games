@@ -8,6 +8,7 @@ class ElementgamesApplicationTests {
 
 	@Test
 	void contextLoads() {
+		// just an empty test to check if context is loaded
 	}
 
 }
