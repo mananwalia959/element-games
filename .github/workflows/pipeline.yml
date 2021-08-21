@@ -22,7 +22,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14
-      - name: Install dependencies and Build Angular App for Java
+      - name: Install dependencies and Build Angular App 
         working-directory: ./client
         run: |
           npm ci
@@ -37,6 +37,7 @@ jobs:
         run: chmod +x ./gradlew
       - name: Build with Gradle
         run: ./gradlew clean build
+      - run : tree ./
       - uses: actions/cache@v2
         name: Cache build folder to use later
         with:
