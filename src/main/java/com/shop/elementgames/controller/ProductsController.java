@@ -15,7 +15,7 @@ import com.shop.elementgames.models.Product;
 import com.shop.elementgames.repository.ProductRepository;
 
 @RestController
-@RequestMapping(path = "/api/products",produces = "application/json" , consumes = "application/json")
+@RequestMapping(path = "/api/products")
 public class ProductsController {
 	
 	@Autowired private ProductRepository productRepository;

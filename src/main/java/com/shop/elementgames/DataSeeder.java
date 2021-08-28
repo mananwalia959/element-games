@@ -29,7 +29,7 @@ public class DataSeeder {
 		
 		Product product2 = new Product();
 		product2.setId(UUID.fromString("32bcfa9d-5857-4d5b-b3fb-c1b2a728e3a0"));
-		product2.setName("Read Dead Redemtiopn");
+		product2.setName("Read Dead Redemption");
 		product2.setDescription("John Marston");
 		product2.setPrice(new BigDecimal("18.99"));
 		product2.setImage("https://pbs.twimg.com/media/EF4k1KNXkAEg-4o.jpg");

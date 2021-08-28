@@ -13,6 +13,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 
+import { HttpClientModule } from '@angular/common/http'; 
+
 
 
 
@@ -31,6 +33,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatCardModule,
     MatButtonModule,
     MatIconModule,
+
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
