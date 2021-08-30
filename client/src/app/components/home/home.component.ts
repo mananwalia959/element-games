@@ -1,3 +1,4 @@
+import { Product } from './../../models/product';
 import { ProductService } from './../../services/product.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -7,12 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  
+  products:Product[] = []
 
   constructor(private readonly productService: ProductService) { }
 
   ngOnInit(): void {
-
-    this.productService.getProducts().toPromise().then(res => console.log(res))
+    this.productService.getProducts().toPromise().then(products => this.products = products)
    }
 
 }
