@@ -13,7 +13,5 @@ public class MyProfile {
 	
 	private String name;
 	private String emailId;
-	
-	private boolean isAdmin;
 
 }

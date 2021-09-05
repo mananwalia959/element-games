@@ -11,7 +11,7 @@ public class BaseRestController {
 	
 	//catch all fallbacks with /api
 	@RequestMapping(path = {"", "/{*config}/**"})
-	void notmessage() {
+	void notFoundMessage() {
 		throw new ResponseStatusException(HttpStatus.NOT_FOUND);
 	}
 	
