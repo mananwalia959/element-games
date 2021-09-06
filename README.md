@@ -15,3 +15,8 @@ the images are published on commit at [mananwalia959/element-games](https://hub.
 | --- | --- |
 |Build and Deploy |[![Pipeline](https://github.com/mananwalia959/element-games/actions/workflows/pipeline.yml/badge.svg)](https://github.com/mananwalia959/element-games/actions/workflows/pipeline.yml)|
 
+## Required Env variables
+|ENV VARIABLE NAME | WHERE TO GET IT | PURPOSE |
+|---| --- | --- |
+| JWT_SECRET | a random string (preferably long and diificult to guess) | For Signing and verifying our jwt tokens|
+
