@@ -85,6 +85,7 @@ jobs:
           docker image prune -a -f
           docker run -d --name element-games  --restart always  --add-host=host.docker.internal:host-gateway \ 
             -p 8085:8080   \ 
+            -e JWT_SECRET=${{ secrets.JWT_SECRET }}  \ 
             mananwalia959/element-games:${{ github.sha }}     
         
 
