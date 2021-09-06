@@ -9,10 +9,8 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
-public class UserPrincipal  {
-	
-	private UUID profileId; 
-	
+@NoArgsConstructor
+public class RegisterResponse {
+	private UUID profileId;
 }
