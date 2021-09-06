@@ -19,7 +19,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	@Autowired private JWTAuthenticationFilter authFilter;
 	
 	@Bean
-	public PasswordEncoder getPAsswordEncoder() {
+	public PasswordEncoder getPasswordEncoder() {
 		return new BCryptPasswordEncoder();
 	}
 	

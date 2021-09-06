@@ -9,12 +9,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.shop.elementgames.models.Product;
+import com.shop.elementgames.models.User;
 import com.shop.elementgames.repository.ProductRepository;
+import com.shop.elementgames.repository.UserRepository;
 
 @Component
 public class DataSeeder {
 	
 	@Autowired private ProductRepository productRepository;
+	@Autowired private UserRepository userRepository;
 	
 	@PostConstruct
 	void seed() {
@@ -35,6 +38,20 @@ public class DataSeeder {
 		product2.setImage("https://pbs.twimg.com/media/EF4k1KNXkAEg-4o.jpg");
 		
 		productRepository.save(product2);
+		
+		
+		User user = new User();
+		
+		user.setProfileId(UUID.fromString("3ea53969-8dec-4dd8-9c85-da0531d38e89"));
+		user.setEmail("abc@gmail.com");
+		user.setName("abc");
+		//translates to 12345
+		user.setEncodedPassword("$2a$10$KQk./ciekRp/Srf/1RjUvOTT7OBD3zklVfZmM4EqV7V2ymGSMq6AK");
+		user.setAdminAccount(false);
+		
+		userRepository.save(user);
+		
+		
 
 		
 	}

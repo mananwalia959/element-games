@@ -31,7 +31,7 @@ public class AuthenticationController {
 	public JwtResponse login(@RequestBody LoginRequest loginRequest) {
 		
 		User user = userRepository.findOneByEmail(loginRequest.getEmail())
-				.orElseThrow(() -> new ForbiddenException());
+				.orElseThrow(ForbiddenException::new);
 		
 		var isPasswordCorrect = passwordEncoder.matches(loginRequest.getPassword(), user.getEncodedPassword());
 		
