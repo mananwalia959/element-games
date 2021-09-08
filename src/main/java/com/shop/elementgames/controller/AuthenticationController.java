@@ -48,7 +48,7 @@ public class AuthenticationController {
 
 	
 	@PostMapping("/register")
-	public RegisterResponse registerNewUser(@RequestBody RegisterRequest registerRequest) {
+	public RegisterResponse registerNewUser(@RequestBody @Valid RegisterRequest registerRequest) {
 		
 		User user = new User();
 		user.setProfileId(UUID.randomUUID());
