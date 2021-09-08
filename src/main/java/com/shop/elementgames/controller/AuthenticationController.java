@@ -2,6 +2,8 @@ package com.shop.elementgames.controller;
 
 import java.util.UUID;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -28,7 +30,7 @@ public class AuthenticationController {
 	@Autowired private UserRepository userRepository;
 	
 	@PostMapping("/login")
-	public JwtResponse login(@RequestBody LoginRequest loginRequest) {
+	public JwtResponse login(@RequestBody @Valid LoginRequest loginRequest) {
 		
 		User user = userRepository.findOneByEmail(loginRequest.getEmail())
 				.orElseThrow(ForbiddenException::new);

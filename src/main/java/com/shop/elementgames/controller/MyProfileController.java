@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.shop.elementgames.authentication.models.UserPrincipal;
-import com.shop.elementgames.models.CartProduct;
+import com.shop.elementgames.models.CartProductDto;
 import com.shop.elementgames.models.MyProfile;
 import com.shop.elementgames.models.User;
 import com.shop.elementgames.repository.UserRepository;
@@ -37,7 +37,7 @@ public class MyProfileController {
 	}
 	
 	@GetMapping("/cart")
-	public List<CartProduct> getCart() {
+	public List<CartProductDto> getCart() {
 		return new ArrayList<>();
 	}
 
