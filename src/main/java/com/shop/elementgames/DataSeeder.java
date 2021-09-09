@@ -24,7 +24,7 @@ public class DataSeeder {
 		Product product1 = new Product();
 		product1.setId(UUID.fromString("e9582513-0d04-42ed-9faf-622a04b83d54"));
 		product1.setName("God of War");
-		product1.setDescription("Kratos");
+		product1.setDescription("In God of War, players control Kratos, a Spartan warrior who is sent by the Greek gods to kill Ares, the god of war. As the story progresses, Kratos is revealed to be Ares' former servant, who had been tricked into killing his own family and is haunted by terrible nightmares." );
 		product1.setPrice(new BigDecimal("18.99"));
 		product1.setImage("https://d1pqlgpcx1bu0k.cloudfront.net/static/img/GOW-OG-image.jpg");
 		
@@ -33,7 +33,7 @@ public class DataSeeder {
 		Product product2 = new Product();
 		product2.setId(UUID.fromString("32bcfa9d-5857-4d5b-b3fb-c1b2a728e3a0"));
 		product2.setName("Read Dead Redemption");
-		product2.setDescription("John Marston");
+		product2.setDescription("America, 1899. The end of the wild west era has begun as lawmen hunt down the last remaining outlaw gangs. Those who will not surrender or succumb are killed. After a robbery goes badly wrong in the western town of Blackwater, Arthur Morgan and the Van der Linde gang are forced to flee. With federal agents and the best bounty hunters in the nation massing on their heels, the gang must rob, steal and fight their way across the rugged heartland of America in order to survive. As deepening internal divisions threaten to tear the gang apart, Arthur must make a choice between his own ideals and loyalty to the gang who raised him. From the creators of Grand Theft Auto V and Red Dead Redemption, Red Dead Redemption 2 is an epic tale of life in America at the dawn of the modern age");
 		product2.setPrice(new BigDecimal("18.99"));
 		product2.setImage("https://pbs.twimg.com/media/EF4k1KNXkAEg-4o.jpg");
 		

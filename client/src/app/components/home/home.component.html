@@ -1,3 +1,20 @@
-<ng-container >
-<div *ngFor="let product of products"> {{product.name}}</div>
+<ng-container>
+    <div class="d-flex row">
+
+        <div *ngFor="let product of products" class="col-xs-12 col-md-6 col-lg-4 p-2">
+            <mat-card >
+                <img mat-card-image src="{{product.image}}"
+                alt="{{product.name}}">
+                <mat-card-title>{{product.name}}</mat-card-title>
+                <mat-card-content>
+                    <p>
+                        {{product.description}}
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-raised-button color="primary">Add To Cart</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
 </ng-container>
