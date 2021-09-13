@@ -26,7 +26,7 @@ public class DataSeeder {
 		product1.setName("God of War");
 		product1.setDescription("In God of War, players control Kratos, a Spartan warrior who is sent by the Greek gods to kill Ares, the god of war. As the story progresses, Kratos is revealed to be Ares' former servant, who had been tricked into killing his own family and is haunted by terrible nightmares." );
 		product1.setPrice(new BigDecimal("18.99"));
-		product1.setImage("https://d1pqlgpcx1bu0k.cloudfront.net/static/img/GOW-OG-image.jpg");
+		product1.setImage("https://static.wikia.nocookie.net/godofwar/images/a/a7/God_of_War_4_cover.jpg/revision/latest?cb=20170614023116");
 		
 		productRepository.save(product1);
 		
